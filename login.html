@@ -11,43 +11,47 @@
 
 <body>
     <header>
-
     </header>
     <main>
-        <div class="container-total">
-            <div class="box-back">
-                <div class="box-back-login">
-                    <h1>Ya estas registrado</h1>
-                    <p>Inicie sesion para entrar a la pagina</p>
-                    <button id="start-sesion">Inicio de sesion</button>
-                </div>
-                <div class="box-back">
-                    <div class="box-back-resgistrer">
-                        <h1>Registarse</h1>
-                        <p>Inicie sesion para entrar a la pagina</p>
-                        <button id="start-sesion">Inicio de sesion</button>
+        <main>
+
+            <div class="total-container">
+                <div class="back-box">
+                    <div class="back-box-login">
+                        <h3>¿Ya estas registrado?</h3>
+                        <p>Debes iniciar sesion</p>
+                        <button id="btn-start-sesion">Iniciar Sesión</button>
+                    </div>
+                    <div class="back-box-register">
+                        <h3>¿Aún no estas registrado?</h3>
+                        <p>Regístrate para que puedas iniciar sesión</p>
+                        <button id="btn-register">Regístrarse</button>
                     </div>
                 </div>
-                <section class="login">
-                    <!--form container of login-->
-                    <div class="container-register">
-                        <form action="" class="form-login">
-                            <h2>Iniciar sesion</h2>
-                            <input type="text" placeholder="Correo">
-                            <input type="password" placeholder="Contraseña">
-                        </form>
-                        <!--form container of register-->
-                        <form action="" class="form-register">
-                            <h2>Registro</h2>
-                            <input type="text" placeholder="Nombre">
-                            <input type="text" placeholder="Correo">
-                            <input type="password" placeholder="Contraseña">
-                            <button>Registro</button>
-                        </form>
-                    </div>
-                </section>
+                <!--Formulario de Login y registro-->
+                <div class="login-container">
+                    <!--Login-->
+                    <form action="" class="form-login">
+                        <h2>Iniciar Sesión</h2>
+                        <input type="text" placeholder="Correo ">
+                        <input type="password" placeholder="Contraseña">
+                        <button>Iniciar</button>
+                    </form>
+
+                    <!--Register-->
+                    <form action="" class="form-register">
+                        <h2>Regístrarse</h2>
+                        <input type="text" placeholder="Nombre">
+                        <input type="text" placeholder="Correo">
+                        <input type="password" placeholder="Contraseña">
+                        <button>Regístrarse</button>
+                    </form>
+                </div>
             </div>
     </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
