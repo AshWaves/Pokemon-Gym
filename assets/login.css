@@ -99,3 +99,49 @@ main{
     padding: 10px;
     font-size: 16px;
 }
+
+.login-container form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background-color: #5dade2;
+    color: white;
+    cursor: pointer;
+}
+
+.form-login{
+    opacity: 1;
+    display: block;
+}
+.form-register{
+    display: none;
+}
+
+/*Responsive of login*/
+
+@media screen and (max-width:850px){
+    main{
+        margin-top: 100px;
+
+    }
+    .back-box{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+    .back-box div{
+        margin: 0px;
+        position: absolute  ;
+    }
+    /*form responsive*/
+    .login-container{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+    .login-container form{
+        position: relative;
+    }
+}
