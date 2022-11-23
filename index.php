@@ -1,27 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gym Pokemon</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-<!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-<!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/login.css">
+    <title>Login</title>
 </head>
-<body>
-    <header>  <h1 class="title"><strong>Pokemon Gym</strong></h1></header>
-    <main>
-        <div class="pokemon-container"></div>
-    </main>
 
-    <script src="assets/js/index.js"></script>
+<body>
+    <header>
+    </header>
+    <main>
+        <main>
+
+            <div class="total-container">
+                <!--Used id for js and class for css-->
+                <div class="back-box" id="back-box">
+                    <div class="back-box-login" id="back-box-login">
+                        <h3>¿Ya estas registrado?</h3>
+                        <p>Debes iniciar sesion</p>
+                        <button id="btn-start-sesion">Iniciar Sesión</button>
+                    </div>
+                    <div class="back-box-register" id="back-box-register">
+                        <h3>¿Aún no estas registrado?</h3>
+                        <p>Regístrate para que puedas iniciar sesión</p>
+                        <button id="btn-register">Regístrarse</button>
+                    </div>
+                </div>
+                <!--Formulario de Login y registro-->
+                <div class="login-container" id="login-container">
+                    <!--Login-->
+                    <!--fix error in dir fro php-->
+                    <form action="/Pokemon-Gym/php/loginUser.php" method="POST" class="form-login" id="form-login">
+                        <h2>Iniciar Sesión</h2>
+                        <input type="text" placeholder="Correo" name="email">
+                        <input type="password" placeholder="Contraseña" name="password">
+                        <button>Iniciar</button>
+                    </form>
+
+                    <!--Register-->
+                    <!--fix error in dir fro php-->
+                    <form action="/Pokemon-Gym/php/registerUser.php" method="POST" class="form-register" id="form-register">
+                        <h2>Regístrarse</h2>
+                        <input type="text" placeholder="Nombre" name="name">
+                        <input type="text" placeholder="Correo" name="email">
+                        <input type="password" placeholder="Contraseña" name="password">
+                        <button>Regístrarse</button>
+                    </form>
+                </div>
+            </div>
+    </main>
     <footer>
-        
+
     </footer>
+    <script src="assets/js/login.js"></script>
 </body>
+
 </html>

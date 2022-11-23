@@ -26,6 +26,10 @@ function generatepokemons(pokemon) {
   pokemonContainer.appendChild(card);
 }
 
+function apiSlectPokemon(){
+  fetchPokemon()
+}
+
 
 // for load first html
 window.addEventListener("load",numbersPositionPokemons(20));

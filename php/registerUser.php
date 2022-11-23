@@ -8,4 +8,17 @@
 
     $execute =mysqli_query($connection,$query);
     
+    if($execute){
+        echo '<script>alert ("usuario alamcenado exitosamente");
+        window.location="../pokeGym.php";
+        </script>
+        ';
+      
+    }else{
+        echo '<script>alert ("Intentalo nuevamente");
+        window.location="../index.php";
+        </script>
+        ';
+    }
+    mysqli_close( $connection);
 ?>
