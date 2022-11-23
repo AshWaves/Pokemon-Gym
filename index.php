@@ -32,7 +32,6 @@
                 <!--Formulario de Login y registro-->
                 <div class="login-container" id="login-container">
                     <!--Login-->
-                    <!--fix error in dir fro php-->
                     <form action="/Pokemon-Gym/php/loginUser.php" method="POST" class="form-login" id="form-login">
                         <h2>Iniciar Sesión</h2>
                         <input type="text" placeholder="Correo" name="email">
@@ -41,7 +40,7 @@
                     </form>
 
                     <!--Register-->
-                    <!--fix error in dir fro php-->
+                    <!--fix error in dir fro php -->
                     <form action="/Pokemon-Gym/php/registerUser.php" method="POST" class="form-register" id="form-register">
                         <h2>Regístrarse</h2>
                         <input type="text" placeholder="Nombre" name="name">
